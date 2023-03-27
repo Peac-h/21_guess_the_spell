@@ -8,11 +8,13 @@ The game also employs such programming strategies as 'separation of concerns', '
 
 The game is responsive to all screen sizes.
 
-**This is my 21st small project so far.**
+**This is my 21st small project so far and first touch with OOP.**
 
 ## Checkout the live demo
 
-[Guess The Spell]()
+[Guess The Spell](https://peac-h.github.io/21_guess_the_spell/)
+
+![Guess The Spell](https://raw.githubusercontent.com/Peac-h/21_guess_the_spell/main/Screen%20Shot%202023-03-27%20at%2010.35.12%20PM.png)
 
 ## How to Play
 
