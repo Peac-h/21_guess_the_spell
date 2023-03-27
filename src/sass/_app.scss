@@ -1,0 +1,88 @@
+.content {
+  max-width: 70rem;
+  width: 100%;
+  background: var(--col-light);
+  box-shadow: 16px 16px 0px #beb6ab;
+  display: grid;
+  grid-template-columns: 10% 1fr;
+
+  .aside-info {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    background: var(--col-light);
+    border-left: 1px solid var(--col-red);
+    padding: 4rem 0;
+
+    white-space: nowrap;
+
+    .separator {
+      width: 1px;
+      height: 100%;
+      background-color: var(--col-red);
+    }
+  }
+
+  .main-info {
+    display: grid;
+    grid-template-rows: minmax(min-content, 34rem) minmax(min-content, 7rem);
+
+    &__game-field {
+      padding: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+
+      .game-header {
+        text-align: center;
+        font-size: 4rem;
+      }
+
+      .game-word {
+        .word {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.2rem;
+          justify-content: center;
+
+          .letter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3.5rem;
+            width: 3.5rem;
+
+            background: rgba(201, 45, 31, 0.1);
+            border: 2px solid var(--col-red);
+            border-radius: 50%;
+          }
+
+          .letter.guessed {
+            background: none;
+          }
+        }
+      }
+
+      .game-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    &__button-field {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-top: 1px solid var(--col-red);
+    }
+  }
+}
